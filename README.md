@@ -1,16 +1,48 @@
 # mapbox_demo_2
 
-A new Flutter project.
+A Flutter application demonstrating Mapbox integration, secure token storage, and map display.
+
+## Features
+- Displays a Mapbox map centered on Ahmedabad, India.
+- Securely stores and retrieves Mapbox access tokens using `flutter_secure_storage`.
+- Handles asynchronous token setup before rendering the map.
+- Shows a loading indicator while initializing.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- A valid Mapbox access token (demo tokens are pre-set in the code for testing purposes)
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
+1. Clone this repository:
+   ```sh
+   git clone <your-repo-url>
+   cd mapbox_demo_2
+   ```
+2. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+3. Run the app:
+   ```sh
+   flutter run
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Project Structure
+- `lib/main.dart`: App entry point.
+- `lib/map_screen.dart`: Main screen displaying the Mapbox map.
+- `lib/token_storage_service.dart`: Handles secure storage and retrieval of Mapbox tokens.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dependencies
+- [mapbox_maps_flutter](https://pub.dev/packages/mapbox_maps_flutter)
+- [permission_handler](https://pub.dev/packages/permission_handler)
+- [flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage)
+- [cupertino_icons](https://pub.dev/packages/cupertino_icons)
+
+## Notes
+- The app uses demo Mapbox tokens stored in `token_storage_service.dart`. For production, replace these with your own tokens and manage them securely.
+- The map is centered on Ahmedabad, India by default. You can change the coordinates in `map_screen.dart`.
+
+## License
+This project is for demonstration purposes. Please check Mapbox's terms of service for usage restrictions.
