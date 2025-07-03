@@ -17,8 +17,8 @@ A Flutter application demonstrating Mapbox integration, secure token storage, an
 ### Installation
 1. Clone this repository:
    ```sh
-   git clone <your-repo-url>
-   cd mapbox_demo_2
+   git clone https://github.com/nitav-cc/mapbox_demo_flutter.git
+   cd mapbox_demo_flutter
    ```
 2. Install dependencies:
    ```sh
@@ -36,7 +36,6 @@ A Flutter application demonstrating Mapbox integration, secure token storage, an
 
 ## Dependencies
 - [mapbox_maps_flutter](https://pub.dev/packages/mapbox_maps_flutter)
-- [permission_handler](https://pub.dev/packages/permission_handler)
 - [flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage)
 - [cupertino_icons](https://pub.dev/packages/cupertino_icons)
 
